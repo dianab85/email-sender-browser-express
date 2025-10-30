@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation",
+      "price": "$99.99",
+      "image": "https://via.placeholder.com/300x200",
+      "url": "https://example.com/product/1"
+    },
+    {
+      "name": "Smart Watch", 
+      "description": "Feature-rich smartwatch with health tracking",
+      "price": "$199.99",
+      "image": "https://via.placeholder.com/300x200",
+      "url": "https://example.com/product/2"
+    },
+    {
+      "name": "Portable Charger",
+      "description": "Fast-charging power bank with 20000mAh capacity",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/300x200",
+      "url": "https://example.com/product/3"
+    }
+  ]
+}

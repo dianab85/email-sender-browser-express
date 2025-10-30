@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Products — Example</title>
+<style>
+  /* Generic resets */
+  html,body{margin:0;padding:0;background:#f4f4f5;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+  img{border:0;display:block;max-width:100%;height:auto;-ms-interpolation-mode:bicubic;}
+  a{color:inherit;text-decoration:none;}
+  /* Container */
+  .outer{width:100%;padding:20px 0;background:#f4f4f5;}
+  .container{max-width:600px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;}
+  .header{background:#0b72b9;padding:18px;text-align:center;color:#fff;}
+  .logo{display:block;margin:0 auto;max-width:160px;}
+  .preheader{display:none!important;visibility:hidden!important;mso-hide:all;color:transparent;height:0;overflow:hidden;}
+  .content{padding:20px;}
+  .h1{margin:0 0 10px;font-size:24px;line-height:1.2;color:#111;font-family:Arial,Helvetica,sans-serif;}
+  .lead{margin:0 0 16px;color:#555;font-size:15px;}
+  /* Product grid using inline-block for best wide compatibility */
+  .product-list{margin:0;padding:0;list-style:none;text-align:left;}
+  .product{display:inline-block;vertical-align:top;box-sizing:border-box;width:50%;padding:10px;}
+  .card{background:#fafafa;border:1px solid #eee;border-radius:8px;padding:12px;display:inline-block;height:100%;}
+  .card img{border-radius:6px;margin-bottom:10px;width:100%;height:auto;object-fit:cover;}
+  .title{margin:0 0 6px;font-weight:600;color:#222;font-size:15px;font-family:Arial,Helvetica,sans-serif;}
+  .desc{margin:0 0 10px;color:#666;font-size:13px;line-height:1.3;}
+  .price{font-weight:700;color:#111;font-size:15px;margin-right: 40px;}
+  .btn{display:inline-block;padding:8px 12px;background:#1a73e8;color:#fff;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;}
+  .footer{padding:16px;background:#f7f7f8;color:#888;font-size:13px;}
+      /* Responsive: stack product columns on small screens */
+  @media only screen and (max-width:650px){
+    .container{width:100% !important}
+    .stack{display:block !important;width:100% !important;max-width:100% !important}
+    .pad{padding:12px !important}
+    .h1{font-size:20px !important}
+    .product{
+      width: auto !important;
+      display: block !important;
+    }
+  }
+  /* Hide preheader visually but keep for preview text */
+  .preheader{display:none !important;visibility:hidden !important;mso-hide:all;opacity:0;color:transparent;height:0;width:0;overflow:hidden}
+  /* Mobile */
+  @media only screen and (max-width:480px){
+    .h1{font-size:20px;}
+    .product{display:block;width:100%;padding:8px;}
+    .container{border-radius:0;}
+  }
+</style>
+</head>
+<body>
+  <span class="preheader">New products curated for you — quick view and easy checkout.</span>
+     
+  <div class="outer" style="width:100%;padding:20px 0;background:#f4f4f5;">
+    <div class="container" style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;">
+      <div class="header" style="background:#0b72b9;padding:18px;text-align:center;color:#fff;">
+        <img class="logo" src="https://dianasevillanodelazaro.ca/email_pictures/logo/logo.png" alt="Company Logo" width="160" style="display:block;margin:0 auto;" />
+      </div>
+
+      <div class="content" style="padding:20px;">
+        <h1 class="h1" style="margin:0 0 10px;font-size:24px;line-height:1.2;color:#111;font-family:Arial,Helvetica,sans-serif;">Handpicked for you</h1>
+        <p class="lead" style="margin:0 0 16px;color:#555;font-size:15px;">Browse the new arrivals. Tap a product for details or hit Buy to go to checkout.</p>
+
+        <ul class="product-list" style="margin:0;padding:0;list-style:none;text-align:left;">
+          <!-- Product 1 -->
+          <li class="product" style="display:inline-block;vertical-align:top;box-sizing:border-box;width:278px;padding:10px;margin-left:0;">
+            <a class="card" href="#" style="background:#fafafa;border:1px solid #eee;border-radius:8px;padding:12px;height:100%;text-decoration:none;color:inherit;">
+              <img src="https://dianasevillanodelazaro.ca/email_pictures/product_pictures/product_picture.png" alt="Wireless Headphones" style="border-radius:6px;margin-bottom:10px;width:100%;height:auto;"/>
+              <h3 class="title" style="margin:0 0 6px;font-weight:600;color:#222;font-size:15px;">Wireless Headphones</h3>
+              <p class="desc" style="margin:0 0 10px;color:#666;font-size:13px;line-height:1.3;">Comfortable, long battery life, and crisp audio for work and travel.</p>
+              <div class="meta" style="display: block;">
+                <div class="price" style="display:inline-block;font:700;color:#111;font-size:15px;">$89</div>
+                <span><a class="btn" href="https://samplestore.com/" style="display:inline-block;padding:8px 12px;background:#1a73e8;color:#fff;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;">Buy</a></span>
+              </div>
+            </a>
+          </li>
+
+          <!-- Product 2 -->
+          <li class="product" style="display:inline-block;vertical-align:top;box-sizing:border-box;width:278px;padding:10px;margin-left:0;">
+            <a class="card" href="#" style="background:#fafafa;border:1px solid #eee;border-radius:8px;padding:12px;height:100%;text-decoration:none;color:inherit;">
+              <img src="https://dianasevillanodelazaro.ca/email_pictures/product_pictures/product_picture.png" alt="Smart Watch" style="border-radius:6px;margin-bottom:10px;width:100%;height:auto;"/>
+              <h3 class="title" style="margin:0 0 6px;font-weight:600;color:#222;font-size:15px;">Smart Watch</h3>
+              <p class="desc" style="margin:0 0 10px;color:#666;font-size:13px;line-height:1.3;">Track activity, notifications, and sleep with an easy-to-read display.</p>
+              <div class="meta" style="display: block;">
+                <div class="price" style="display:inline-block;font-weight:700;color:#111;font-size:15px;">$129</div>
+                <span style="display:inline-block;">
+                  <a class="btn" href="https://samplestore.com/" style="display:inline-block;padding:8px 12px;background:#1a73e8;color:#fff;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;">Buy</a>
+                </span>
+              </div>
+            </a>
+          </li>
+
+          <!-- Product 3 -->
+          <li class="product" style="display:inline-block;vertical-align:top;box-sizing:border-box;width:278px;padding:10px;margin-left:0;">
+            <a class="card" href="#" style="background:#fafafa;border:1px solid #eee;border-radius:8px;padding:12px;height:100%;text-decoration:none;color:inherit;">
+              <img src="https://dianasevillanodelazaro.ca/email_pictures/product_pictures/product_picture.png" alt="Portable Charger" style="border-radius:6px;margin-bottom:10px;width:100%;height:auto;"/>
+              <h3 class="title" style="margin:0 0 6px;font-weight:600;color:#222;font-size:15px;">Portable Charger</h3>
+              <p class="desc" style="margin:0 0 10px;color:#666;font-size:13px;line-height:1.3;">Small, fast charging for phones and tablets on the go.</p>
+              <div class="meta" style="display: block;" >
+                <div class="price" style="display:inline-block;font-weight:700;color:#111;font-size:15px;">$29</div>
+                <span style="display:inline-block;"><a class="btn" href="https://samplestore.com/" style="display:inline-block;padding:8px 12px;background:#1a73e8;color:#fff;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;">Buy</a></span>
+              </div>
+            </a>
+          </li>
+
+          <!-- Product 4 -->
+          <li class="product" style="display:inline-block;vertical-align:top;box-sizing:border-box;width:278px;padding:10px;margin-left:0;">
+            <a class="card" href="#" style="background:#fafafa;border:1px solid #eee;border-radius:8px;padding:12px;height:100%;text-decoration:none;color:inherit;">
+              <img src="https://dianasevillanodelazaro.ca/email_pictures/product_pictures/product_picture.png" alt="Noise Masking Sleepbuds" style="border-radius:6px;margin-bottom:10px;width:100%;height:auto;"/>
+              <h3 class="title" style="margin:0 0 6px;font-weight:600;color:#222;font-size:15px;">Noise Masking Sleepbuds</h3>
+              <p class="desc" style="margin:0 0 10px;color:#666;font-size:13px;line-height:1.3;">Engineered for better sleep with soothing sounds and comfortable fit.</p>
+              <div class="meta" style="display: block;" >
+                <div class="price" style="display:inline-block;font-weight:700;color:#111;font-size:15px;">$69</div>
+                <span style="display:inline-block;">
+                  <a class="btn" href="https://samplestore.com/" style="display:inline-block;padding:8px 12px;background:#1a73e8;color:#fff;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;">Buy</a>
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footer" style="padding:16px;background:#f7f7f8;color:#888;font-size:13px;">
+        <p style="margin:0 0 8px;">Need help? <a href="mailto:support@example.com" style="color:#1a73e8;">support@example.com</a></p>
+        <p style="margin:0;">Example Inc., 123 Main St, City, Country</p>
+        <p style="margin:12px 0 0;"><a href="#" style="color:#888;">Unsubscribe</a></p>
+      </div>
+
+    </div>
+  
+  </div>
+
+</body>
+</html>
