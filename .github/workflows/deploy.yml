@@ -39,4 +39,3 @@ jobs:
             -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.HOSTINGER_SSH_PORT }} -o StrictHostKeyChecking=no" \
             ./ ${{ secrets.HOSTINGER_SSH_USER }}@${{ secrets.HOSTINGER_SSH_HOST }}:${{ secrets.HOSTINGER_PATH }}/
           echo "Deployment complete!"
-          ssh-keygen -t ed25519
