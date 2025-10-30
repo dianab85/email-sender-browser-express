@@ -1,3 +1,3 @@
-email-sender/node_modules
-email-sender/package-lock.json
-email-sender/.env
+email-sender-browser-express/node_modules
+email-sender-browser-express/package-lock.json
+email-sender-browser-express/.env
