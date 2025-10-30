@@ -5,4 +5,6 @@ Created a Node.js workflow to design and preview responsive emails on desktop, w
 
 ### EMAIL TEMPLATES
 
+https://dianasevillanodelazaro.ca/email-projects/email-sender-browser-express/src/templates/event-invitation.html
+
 
